@@ -40,6 +40,11 @@ namespace ParkingApp.Model
                 {
                     Id = 2,
                     LicensePlate = "nanananna"
+                },
+                new Driver
+                {
+                    Id = 3,
+                    LicensePlate = "blblblbl"
                 }
             );
         }
