@@ -8,9 +8,10 @@ namespace ParkingApp.Model
         [Required]
         [MaxLength(50)]
         public string LicensePlate { get; set; }
-      
 
-        // public long CarId { get; set; }
+        [Required]
+        public long CarId { get; set; }
+        
         // public Car Car { get; set; }
 
     }

@@ -4,8 +4,8 @@ namespace ParkingApp.Model
     {
         public string Name{get;set;}
 
-        public RequestStatus(string Name){
+        /*public RequestStatus(string Name){
             this.Name = Name;
-        }
+        }*/
     }
 }

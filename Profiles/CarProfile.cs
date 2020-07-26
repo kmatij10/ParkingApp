@@ -17,9 +17,8 @@ namespace ParkingApp.Profiles
             CreateMap<CarCreateDTO, Car>()
                 .ForMember(
                     dest => dest.Model,
-                    opt => opt.MapFrom(src => (src.Company + src.Type)));
+                    opt => opt.MapFrom(src => (src.Company + " " + src.Type)));
 
-            // CreateMap<Pokemon, PokemonDetailDTO>();
         }
     }
 }

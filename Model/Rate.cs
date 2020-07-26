@@ -4,8 +4,8 @@ namespace ParkingApp.Model
     {
         public decimal PriceHourly{get;set;}
 
-        public Rate(decimal PriceHourly){
+        /*public Rate(decimal PriceHourly){
             this.PriceHourly = PriceHourly;
-        }
+        }*/
     }
 }

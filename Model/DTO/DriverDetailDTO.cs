@@ -4,5 +4,6 @@ namespace ParkingApp.Model.DTO
     {
         public long Id { get; set; }
         public string LicensePlate { get; set; }
+        public long CarId { get; set; }
     }
 }

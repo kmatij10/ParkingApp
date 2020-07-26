@@ -34,6 +34,14 @@ namespace ParkingApp
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddDbContext<ParkingContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:Default"]));
             services.AddScoped<ICarRepository, CarRepository>();
+            services.AddScoped<IDriverRepository, DriverRepository>();
+            services.AddScoped<IPaymentRepository, PaymentRepository>();
+            services.AddScoped<IParkingSpaceRepository, ParkingSpaceRepository>();
+            services.AddScoped<IParkingTypeRepository, ParkingTypeRepository>();
+            services.AddScoped<IPaymentPanelRepository, PaymentPanelRepository>();
+            services.AddScoped<IRateRepository, RateRepository>();
+            services.AddScoped<IRequestStatusRepository, RequestStatusRepository>();
+            services.AddScoped<IParkedRepository, ParkedRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

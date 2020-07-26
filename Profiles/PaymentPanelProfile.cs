@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace ParkingApp.Profiles
 {
-    public class DriverProfile : Profile
+    public class PaymentPanelProfile : Profile
     {
-        public DriverProfile()
+        public PaymentPanelProfile()
         {
-            CreateMap<Driver, DriverDetailDTO>();
+            CreateMap<PaymentPanel, PaymentPanelDetailDTO>();
 
-            CreateMap<DriverCreateDTO, Driver>();
+            CreateMap<PaymentPanelCreateDTO, PaymentPanel>();
         }
     }
 }

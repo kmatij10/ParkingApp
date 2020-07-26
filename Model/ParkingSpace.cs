@@ -6,14 +6,16 @@ namespace ParkingApp.Model
     {
         public double Lat{get;set;}
         public double Lng{get;set;}
-        public ParkingType ParkingTypes;
-        public Rate Rates;
+        public long ParkingTypeId { get; set; }
+        public long RateId { get; set; }
+        //public ParkingType ParkingTypes;
+        //public Rate Rates;
 
-        public ParkingSpace(double Lat, double Lng, ParkingType ParkingTypes, Rate Rates){
+        /*public ParkingSpace(double Lat, double Lng, ParkingType ParkingTypes, Rate Rates){
             this.Lat = Lat;
             this.Lng = Lng;
             this.ParkingTypes = ParkingTypes;
             this.Rates = Rates;
-        }
+        }*/
     }
 }

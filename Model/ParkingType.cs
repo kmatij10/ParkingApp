@@ -5,9 +5,9 @@ namespace ParkingApp.Model
         public string Type{get;set;}
         public int Zone{get;set;}
 
-        public ParkingType(string Type, int Zone){
+        /*public ParkingType(string Type, int Zone){
             this.Type = Type;
             this.Zone = Zone;
-        }
+        }*/
     }
 }
